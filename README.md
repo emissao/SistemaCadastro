@@ -15,10 +15,3 @@ Este é um projeto de exemplo de um sistema de cadastro de usuários desenvolvid
 - [SQL Server](https://www.microsoft.com/sql-server) ou outro banco de dados compatível.
 - [.NET Framework](https://dotnet.microsoft.com/) instalado.
 
-## Execute o comando de migração para criar as tabelas do banco de dados:
-```dotnet ef database update```
-1. Abra o projeto no Visual Studio.
-
-2. Compile o projeto.
-
-3. Execute o programa.
