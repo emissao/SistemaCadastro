@@ -4,7 +4,7 @@ Este é um projeto de exemplo de um sistema de cadastro de usuários desenvolvid
 
 ## Funcionalidades
 
-- Cadastro de usuários com informações básicas, como nome, e-mail e senha.
+- Cadastro de usuários com informações básicas, como nome, telefone e senha.
 - Listagem de usuários cadastrados.
 - Edição de informações de usuários.
 - Exclusão de usuários.
