@@ -35,4 +35,4 @@ Antes de executar o programa, é necessário configurar o banco de dados. Siga o
   "ConnectionStrings": {
     "DefaultConnection": "SuaStringDeConexaoAqui"
   }
-}``` 
+}
