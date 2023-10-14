@@ -29,10 +29,3 @@ Antes de executar o programa, é necessário configurar o banco de dados. Siga o
 2. Compile o projeto.
 
 3. Execute o programa.
-
-```json
-{
-  "ConnectionStrings": {
-    "DefaultConnection": "SuaStringDeConexaoAqui"
-  }
-}
