@@ -22,12 +22,6 @@ Antes de executar o programa, é necessário configurar o banco de dados. Siga o
 1. Crie um banco de dados SQL Server ou outro banco de dados de sua escolha.
 2. Atualize a string de conexão com o banco de dados no arquivo `appsettings.json` com as informações do seu banco.
 
-```json
-{
-  "ConnectionStrings": {
-    "DefaultConnection": "SuaStringDeConexaoAqui"
-  }
-}``` 
 ## Execute o comando de migração para criar as tabelas do banco de dados:
 ```dotnet ef database update```
 1. Abra o projeto no Visual Studio.
@@ -35,3 +29,10 @@ Antes de executar o programa, é necessário configurar o banco de dados. Siga o
 2. Compile o projeto.
 
 3. Execute o programa.
+
+```json
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "SuaStringDeConexaoAqui"
+  }
+}``` 
