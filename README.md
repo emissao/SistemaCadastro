@@ -15,13 +15,6 @@ Este é um projeto de exemplo de um sistema de cadastro de usuários desenvolvid
 - [SQL Server](https://www.microsoft.com/sql-server) ou outro banco de dados compatível.
 - [.NET Framework](https://dotnet.microsoft.com/) instalado.
 
-## Configuração do Banco de Dados
-
-Antes de executar o programa, é necessário configurar o banco de dados. Siga os passos abaixo:
-
-1. Crie um banco de dados SQL Server ou outro banco de dados de sua escolha.
-2. Atualize a string de conexão com o banco de dados no arquivo `appsettings.json` com as informações do seu banco.
-
 ## Execute o comando de migração para criar as tabelas do banco de dados:
 ```dotnet ef database update```
 1. Abra o projeto no Visual Studio.
