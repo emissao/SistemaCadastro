@@ -91,7 +91,7 @@ namespace SistemaCadastro
                 txtNome.Focus();
                 return;
             }
-            if (txtTelefone.Text == "")
+            if (txtTelefone.Text == "(00) 00000-0000")
             {
                 MessageBox.Show("Preencha o campo telefone.");
                 txtTelefone.Focus();
@@ -131,7 +131,9 @@ namespace SistemaCadastro
 
         private void btnExcluir_Click(object sender, EventArgs e)
         {
-
+            int indice = lista.SelectedIndex;
+            pessoas.RemoveAt(indice);
+            Listar();
         }
         private void Listar()
         {
@@ -139,6 +141,37 @@ namespace SistemaCadastro
             foreach (Pessoa p  in pessoas)
             {
                 lista.Items.Add(p.Nome);
+            }
+        }
+
+        private void txtTelefone_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void lista_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            int indice = lista.SelectedIndex;
+            Pessoa p = pessoas[indice];
+
+            txtNome.Text = p.Nome;
+            txtData.Text = p.DataNascimento;
+            comboEC.SelectedItem = p.EstadoCivil;
+            txtTelefone.Text = p.Telefone;
+            checkCasa.Checked = p.CasaPropria;
+            checkVeiculo.Checked = p.Veiculo;
+
+            switch(p.Sexo)
+            {
+                case 'M':
+                    radioM.Checked = true; 
+                    break;
+                case 'F':
+                    radioM.Checked = true;
+                    break;
+                default:
+                    radioO.Checked = true; 
+                    break;
             }
         }
     }

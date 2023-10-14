@@ -126,6 +126,7 @@
             this.txtTelefone.Name = "txtTelefone";
             this.txtTelefone.Size = new System.Drawing.Size(359, 32);
             this.txtTelefone.TabIndex = 7;
+            this.txtTelefone.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.txtTelefone_MaskInputRejected);
             // 
             // checkCasa
             // 
@@ -204,6 +205,7 @@
             this.lista.Name = "lista";
             this.lista.Size = new System.Drawing.Size(631, 96);
             this.lista.TabIndex = 11;
+            this.lista.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lista_MouseDoubleClick);
             // 
             // btnCadastrar
             // 
