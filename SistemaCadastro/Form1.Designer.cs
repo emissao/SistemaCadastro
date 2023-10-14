@@ -39,13 +39,13 @@
             this.checkCasa = new System.Windows.Forms.CheckBox();
             this.checkVeiculo = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioM = new System.Windows.Forms.RadioButton();
-            this.radioF = new System.Windows.Forms.RadioButton();
             this.radioO = new System.Windows.Forms.RadioButton();
+            this.radioF = new System.Windows.Forms.RadioButton();
+            this.radioM = new System.Windows.Forms.RadioButton();
             this.lista = new System.Windows.Forms.ListBox();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
-            this.btnLimpar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -160,17 +160,16 @@
             this.groupBox1.Text = "Sexo:";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // radioM
+            // radioO
             // 
-            this.radioM.AutoSize = true;
-            this.radioM.Checked = true;
-            this.radioM.Location = new System.Drawing.Point(6, 30);
-            this.radioM.Name = "radioM";
-            this.radioM.Size = new System.Drawing.Size(72, 18);
-            this.radioM.TabIndex = 0;
-            this.radioM.TabStop = true;
-            this.radioM.Text = "Masculino";
-            this.radioM.UseVisualStyleBackColor = true;
+            this.radioO.AutoSize = true;
+            this.radioO.Location = new System.Drawing.Point(7, 82);
+            this.radioO.Name = "radioO";
+            this.radioO.Size = new System.Drawing.Size(52, 18);
+            this.radioO.TabIndex = 2;
+            this.radioO.TabStop = true;
+            this.radioO.Text = "Outro";
+            this.radioO.UseVisualStyleBackColor = true;
             // 
             // radioF
             // 
@@ -184,16 +183,17 @@
             this.radioF.UseVisualStyleBackColor = true;
             this.radioF.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
-            // radioO
+            // radioM
             // 
-            this.radioO.AutoSize = true;
-            this.radioO.Location = new System.Drawing.Point(7, 82);
-            this.radioO.Name = "radioO";
-            this.radioO.Size = new System.Drawing.Size(52, 18);
-            this.radioO.TabIndex = 2;
-            this.radioO.TabStop = true;
-            this.radioO.Text = "Outro";
-            this.radioO.UseVisualStyleBackColor = true;
+            this.radioM.AutoSize = true;
+            this.radioM.Checked = true;
+            this.radioM.Location = new System.Drawing.Point(6, 30);
+            this.radioM.Name = "radioM";
+            this.radioM.Size = new System.Drawing.Size(72, 18);
+            this.radioM.TabIndex = 0;
+            this.radioM.TabStop = true;
+            this.radioM.Text = "Masculino";
+            this.radioM.UseVisualStyleBackColor = true;
             // 
             // lista
             // 
@@ -227,23 +227,23 @@
             this.btnExcluir.UseVisualStyleBackColor = true;
             this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
-            // btnLimpar
+            // button1
             // 
-            this.btnLimpar.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpar.Location = new System.Drawing.Point(573, 439);
-            this.btnLimpar.Name = "btnLimpar";
-            this.btnLimpar.Size = new System.Drawing.Size(190, 67);
-            this.btnLimpar.TabIndex = 14;
-            this.btnLimpar.Text = "Limpar";
-            this.btnLimpar.UseVisualStyleBackColor = true;
-            this.btnLimpar.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(573, 439);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(190, 67);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "Limpar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1033, 673);
-            this.Controls.Add(this.btnLimpar);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.lista);
@@ -289,7 +289,7 @@
         private System.Windows.Forms.ListBox lista;
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.Button btnExcluir;
-        private System.Windows.Forms.Button btnLimpar;
+        private System.Windows.Forms.Button button1;
     }
 }
 

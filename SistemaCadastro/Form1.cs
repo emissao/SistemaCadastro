@@ -62,6 +62,16 @@ namespace SistemaCadastro
 
         private void button1_Click(object sender, EventArgs e)
         {
+            txtNome.Text = "";
+            txtData.Text = "";
+            comboEC.SelectedIndex = 1;
+            txtTelefone.Text = "";
+            checkCasa.Checked = false;
+            checkVeiculo.Checked=false;
+            radioM.Checked = true;
+            radioF.Checked = false;
+            radioO.Checked = false;
+            txtNome.Focus();
 
         }
 
@@ -116,7 +126,7 @@ namespace SistemaCadastro
             {
                 pessoas[index] = p;
             }
-            button1_Click(button1_Click, EventArgs.Empty);   
+            Listar();
         }
 
         private void btnExcluir_Click(object sender, EventArgs e)
